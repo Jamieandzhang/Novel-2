@@ -1,0 +1,203 @@
+[ 2017-02-12T15:47:30+08:00 ] ::1 /NovelPickUps/index.php/Home/Chapter
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+ERR: 无法加载控制器:Chapter
+
+[ 2017-02-12T15:47:31+08:00 ] ::1 /NovelPickUps/index.php/Home/Chapter
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载控制器:Chapter
+
+[ 2017-02-12T15:48:08+08:00 ] ::1 /NovelPickUps/index.php/Home/Novel
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+ERR: 非法操作:index
+
+[ 2017-02-12T15:48:25+08:00 ] ::1 /NovelPickUps/index.php/Home/Chapter
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载控制器:Chapter
+
+[ 2017-02-12T15:51:42+08:00 ] ::1 /NovelPickUps/index.php/Home/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载控制器:Test
+
+[ 2017-02-12T15:51:54+08:00 ] ::1 /NovelPickUps/index.php/Home/NovelPage/new
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+ERR: 非法操作:new
+
+[ 2017-02-12T15:51:57+08:00 ] ::1 /NovelPickUps/index.php/Home/NovelPage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:index
+
+[ 2017-02-12T15:52:02+08:00 ] ::1 /NovelPickUps/index.php/Home/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载控制器:Test
+
+[ 2017-02-12T15:54:09+08:00 ] ::1 /NovelPickUps/index.php/Home/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-02-12T15:54:37+08:00 ] ::1 /NovelPickUps/index.php/Home/Branch
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+ERR: 无法加载控制器:Branch
+
+[ 2017-02-12T15:55:15+08:00 ] ::1 /NovelPickUps/index.php/Home/Chapter
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-02-12T15:55:45+08:00 ] ::1 /NovelPickUps/index.php/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-02-12T15:55:46+08:00 ] ::1 /NovelPickUps/index.php/Home/NovelPage/novel_manage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+
+[ 2017-02-12T15:55:47+08:00 ] ::1 /NovelPickUps/index.php/Home/Novel/novel_manage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phptool\Apache24\htdocs\NovelPickUps\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `novel` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `novel` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `novel` WHERE `author_id` = 5  [ RunTime:0.0000s ]
+
+[ 2017-02-12T15:55:48+08:00 ] ::1 /NovelPickUps/index.php/Home/Chapter/toAddPage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-02-12T15:55:52+08:00 ] ::1 /NovelPickUps/index.php/Home/Novel/novel_manage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phptool\Apache24\htdocs\NovelPickUps\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `novel` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `novel` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `novel` WHERE `author_id` = 5  [ RunTime:0.0010s ]
+
+[ 2017-02-12T15:58:00+08:00 ] ::1 /NovelPickUps/index.php/Home/Chapter/toAddPage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-02-12T15:58:05+08:00 ] ::1 /NovelPickUps/index.php/Home/Novel/novel_manage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phptool\Apache24\htdocs\NovelPickUps\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `novel` [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `novel` [ RunTime:0.0150s ]
+SQL: SELECT * FROM `novel` WHERE `author_id` = 5  [ RunTime:0.0010s ]
+
+[ 2017-02-12T15:58:35+08:00 ] ::1 /NovelPickUps/index.php/Home/NovelPage/novel_manage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+
+[ 2017-02-12T15:58:35+08:00 ] ::1 /NovelPickUps/index.php/Home/Novel/novel_manage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phptool\Apache24\htdocs\NovelPickUps\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `novel` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `novel` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `novel` WHERE `author_id` = 5  [ RunTime:0.0010s ]
+
+[ 2017-02-12T15:58:37+08:00 ] ::1 /NovelPickUps/index.php/Home/Chapter/toAddPage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-02-12T15:58:40+08:00 ] ::1 /NovelPickUps/index.php/Home/Novel/novel_manage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phptool\Apache24\htdocs\NovelPickUps\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `novel` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `novel` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `novel` WHERE `author_id` = 5  [ RunTime:0.0010s ]
+
+[ 2017-02-12T16:00:42+08:00 ] ::1 /NovelPickUps/index.php/Home/NovelPage/novel_manage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-02-12T16:00:43+08:00 ] ::1 /NovelPickUps/index.php/Home/Novel/novel_manage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phptool\Apache24\htdocs\NovelPickUps\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `novel` [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `novel` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `novel` WHERE `author_id` = 5  [ RunTime:0.0000s ]
+
+[ 2017-02-12T16:00:44+08:00 ] ::1 /NovelPickUps/index.php/Home/Chapter/toAddPage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-02-12T16:00:45+08:00 ] ::1 /NovelPickUps/index.php/Home/Chapter/toAddPage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-02-12T16:00:47+08:00 ] ::1 /NovelPickUps/index.php/Home/NovelPage/novel_manage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-02-12T16:00:47+08:00 ] ::1 /NovelPickUps/index.php/Home/Novel/novel_manage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phptool\Apache24\htdocs\NovelPickUps\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `novel` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `novel` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `novel` WHERE `author_id` = 5  [ RunTime:0.0000s ]
+
+[ 2017-02-12T16:00:49+08:00 ] ::1 /NovelPickUps/index.php/Home/Chapter/toAddPage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
