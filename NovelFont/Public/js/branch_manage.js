@@ -8,10 +8,10 @@ var vm = new Vue({
 
     },
     mounted:function() {
-        this.cartView();
+        this.branch_manage();
     },
     methods:{
-        cartView:function (){
+        branch_manage:function (){
             var _this = this;
             this.$http.get('../Branch/branch_manage').then(function(res){
                 _this.productList = res.body;

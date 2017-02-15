@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 	<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
-	<title>作品管理</title>
+	<title>章节列表</title>
 	<link rel="stylesheet" href="/Novel/NovelFont/Public/css/bootstrap.css">
 	<script src="/Novel/NovelFont/Public/js/jquery-3.1.1.js" type="text/javascript"></script>
 	<script src="/Novel/NovelFont/Public/js/bootstrap.js" type="text/javascript"></script>
@@ -41,7 +41,7 @@
 		</div>
 	</nav>
 	<!-- 头部结束 -->
-	
+
 	<div class="row clearfix">
 		<div class="col-md-2 column">
 			<!--左菜单-->
@@ -54,33 +54,31 @@
 			<a href="__APP__/Home/NovelPage/" class="list-group-item  gap" title="By yourself">关注你的人</a>
 			<a href="__APP__/Home/NovelPage/" class="list-group-item  gap" title="By yourself">你关注的人</a>
 		</div>
-		<!--右侧表格栏-->
+
 		<div class="col-md-8 column">
 			<ul class="nav navbar-right">
-				<a href="__APP__/Home/NovelPage/novel_add">新增作品</a>
+				<a href="#">新增章节</a>
 			</ul>
 			<table class="table table-condensed">
 				<thead>
 				<tr>
-					<th>作品ID</th>
-					<th>作品名称</th>
-					<th>操作<th>
+					<th>章节NO.</th>
+					<th>章节名称</th>
 				</tr>
 				</thead>
 				<tbody>
-				<tr  v-for="item in productList">
-					<td>{{item.id}}</td>
-					<!--<input type="text"  />-->
-					<td><a v-bind:href="'__APP__/Home/Chapter/chapterListPage?branch_id='+item.id">{{item.name}}</a></td>
-					<td><a v-bind:href="'__APP__/Home/Chapter/toAddPage?branch_id='+item.id">新增章节</a><td>
+				<tr  v-for="item in chapterList">
+					<td>{{item.num}}</td>
+					<td><a v-bind:href="'__APP__/Home/Chapter/showChapterPage?chapter_id='+item.id">{{item.name}}</a></td>
 				</tr>
 				</tbody>
 			</table>
 		</div>
 	</div>
 </div>
+
 <script src="/Novel/NovelFont/Public/js/vue.js"></script>
 <script src="/Novel/NovelFont/Public/js/vue-resource.js"></script>
-<script src="/Novel/NovelFont/Public/js/branch_manage.js"></script>
+<script src="/Novel/NovelFont/Public/js/chapterListPage.js"></script>
 </body>
 </html>

@@ -47,5 +47,9 @@ class BranchController extends Controller {
 		$result = $branch->findById ( $_SESSION ['user'] ['id'] );
 		$this->ajaxReturn($result);
 	}
+	/*根据关键字搜索作品*/
+	public function seekByKword(){
+		
+	}
 	
 }

@@ -1,19 +1,19 @@
 var vm = new Vue({
     el:'#app', //监听的范围
     data:{
-        productList:[]
+        chapterList:[]
     },
     filters:{
 
     },
     mounted:function() {
-        this.ins_manage();
+        this.showChaptersList();
     },
     methods:{
-        ins_manage:function (){
+        showChaptersList:function (){
             var _this = this;
-            this.$http.get('../Inspiration/ins_manage').then(function(res){
-                _this.productList = res.body;
+            this.$http.get('../Chapter/chapterList').then(function(res){
+                _this.chapterList = res.body;
             });
         }
     }
