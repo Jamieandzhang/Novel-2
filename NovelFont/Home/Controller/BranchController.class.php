@@ -30,9 +30,10 @@ class BranchController extends Controller {
 	 */
 	public static function initOne($data) { // $data中包含1,2,3,4
 		$branch ['name'] = $data ['name'];
+		$branch ['type'] = $data ['type'];
 		$branch ['novel_id'] = $data ['id'];
 		$branch ['author2_id'] = $data ['author_id'];
-		$branch ['introl'] = $data ['intro'];
+		$branch ['intro'] = $data ['intro'];
 		$branch ['main'] = 1;
 		$branchModel = new BranchModel();
 		$branchModel->add ($branch);
@@ -47,9 +48,11 @@ class BranchController extends Controller {
 		$result = $branch->findById ( $_SESSION ['user'] ['id'] );
 		$this->ajaxReturn($result);
 	}
-	/*根据关键字搜索作品*/
-	public function seekByKword(){
-		
+	/*根据作者名字关键字搜索作品*/
+	public function findByAuthor(){
+		$branchModel = new BranchModel();
+		$res = $branchModel->findByAuthor($_SESSION['other']);
+		$this->ajaxReturn($res);
 	}
 	
 }

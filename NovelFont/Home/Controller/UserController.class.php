@@ -33,7 +33,6 @@ class UserController extends Controller {
 		}else{ //若存在
 			//将用户信息保存在session中
 			$_SESSION['user'] = $result[0];
-// 			dump($result);
 			$this->display("Index/index_logined");
 		}
 	}
@@ -47,5 +46,10 @@ class UserController extends Controller {
 			$this->display('Index/index');
 		}
 	}
-	
+	//获取用户信息
+	public function getUserInfo(){
+		$user = new UserModel();
+		$res = $user->getUserByName($_SESSION['other']);
+		$this->ajaxReturn($res);
+	}
 }

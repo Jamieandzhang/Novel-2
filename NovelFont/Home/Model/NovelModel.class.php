@@ -10,4 +10,5 @@ class NovelModel extends Model {
 		$novel = new Model ('novel');
 		return $novel->where($where)->select();
 	}
+	
 }

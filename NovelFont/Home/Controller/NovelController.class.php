@@ -39,7 +39,7 @@ class NovelController extends Controller {
 		}
 		//
 	}
-	
+	//个人作品
 	public function novel_manage() {
 		$novel = new NovelModel ();
 		$result = $novel->findById ( $_SESSION ['user'] ['id'] );

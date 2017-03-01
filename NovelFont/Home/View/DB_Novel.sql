@@ -55,7 +55,6 @@ CREATE TABLE `branch` (
 
 
 DROP TABLE IF EXISTS `inspiration`;
-<<<<<<< HEAD
 CREATE TABLE `inspiration` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
   `name` varchar(20) NOT NULL DEFAULT '',

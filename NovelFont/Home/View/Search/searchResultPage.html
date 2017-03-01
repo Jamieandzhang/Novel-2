@@ -13,12 +13,24 @@
 </head>
 <body>
 <div id="app">
-	
+	<my-head></my-head>
+	<li v-for="novel in novels">
+		
+			<div class="col-md-8 column">
+				<h3><a v-bind:href="'__APP__/Home/Chapter/toListPage?branch_id='+novel.id">{{novel.name}}</a></h3>
+				<p>
+				作者:<a v-bind:href="'__APP__/Home/UserPage/otherMain?other='+novel.author">{{novel.author}}</a></p>
+
+				<p v-if="novel.main==1">主分支否：是</p>
+				<p v-else>主分支否：否</p>
+				
+				<p>简介：{{novel.intro}}</p>
+			</div>
+	</li>
 </div>
-
-
 <script src="/Novel/NovelFont/Public/js/vue.js"></script>
 <script src="/Novel/NovelFont/Public/js/vue-resource.js"></script>
-<script src="/Novel/NovelFont/Public/js/chapterListPage.js"></script>
+<script src="/Novel/NovelFont/Public/js/vueGlobal1.js"></script>
+<script src="/Novel/NovelFont/Public/js/see.js"></script>
 </body>
 </html>

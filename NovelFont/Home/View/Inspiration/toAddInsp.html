@@ -12,46 +12,17 @@
     </style>
 </head>
 <body>
-    <div>
-        <nav class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button> <a class="navbar-brand" href="__APP__/Home/Index">小说接龙网</a>
-            </div>
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li>
-                        <a href="__APP__/Home/Index">首页</a>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">下载APP<strong class="caret"></strong></a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a href="#">Android</a>
-                            </li>
-                            <li>
-                                <a href="#">IPhone</a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-               <form method="get" action="__APP__/Home/Search/toSearchResultPage" class="navbar-form navbar-left" role="search">
-                <div class="form-group">
-                    <input type="text" name="kWord" class="form-control" placeholder="作者/小说" />
-                </div> <button type="submit" class="btn btn-default">搜索</button>
-            </form>
-            </div>
-        </nav>
+    <div id="app">
+        <my-head></my-head>
         <!-- 头部结束 -->
 
-        <div class="row clearfix">
-            <!--左菜单-->
-            <div class="col-md-2 column" style="display: inline-block">
-                <a href="__APP__/Home/Branch/branch_managePage" class="list-group-item  gap" title="New_Novel">作品管理</a>
-                <a href="__APP__/Home/Inspiration/ins_managePage" class="list-group-item  gap" title="Continue">灵感随笔</a>
-                <a href="__APP__/Home/NovelPage/" class="list-group-item  gap" title="By yourself">关注你的人</a>
-                <a href="__APP__/Home/NovelPage/" class="list-group-item  gap" title="By yourself">你关注的人</a>
-            </div>
-
+        <!--左菜单-->  
+        <my-left></my-left>
+    </div>
+    <script src="/Novel/NovelFont/Public/js/vue.js"></script>
+    <script src="/Novel/NovelFont/Public/js/vue-resource.js"></script>
+    <script src="/Novel/NovelFont/Public/js/vueGlobal1.js"></script>
+    <script src="/Novel/NovelFont/Public/js/vueGlobalInit.js"></script>
 
 
             <!-- 右侧章节创建表单 -->
@@ -81,6 +52,8 @@
                 </form>
             </div>
         </div>
-    </div>
+<script src="/Novel/NovelFont/Public/js/vue.js"></script>
+<script src="/Novel/NovelFont/Public/js/vue-resource.js"></script>
+<script src="/Novel/NovelFont/Public/js/vueGlobal.js"></script>
 </body>
 </html>

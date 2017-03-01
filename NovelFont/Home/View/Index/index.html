@@ -33,6 +33,9 @@
 						</li>
 					</ul>
 					<form method="get" action="__APP__/Home/Search/toSearchResultPage" class="navbar-form navbar-left" role="search">
+					<label class="text-info" >小说名称</label><input type="radio" checked="checked" name="searchType" value="novelName"/>
+	                <label class="text-info" >小说类型</label><input type="radio" name="searchType" value="novelType"/>
+	                <label class="text-info" >小说作者</label><input type="radio" name="searchType" value="novelAuthor"/>
 						<div class="form-group">
 							<input type="text" name="kWord" class="form-control" placeholder="作者/小说" />
 						</div> <button type="submit" class="btn btn-default">搜索</button>
