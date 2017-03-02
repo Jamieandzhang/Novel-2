@@ -53,7 +53,6 @@ class ChapterController extends Controller {
 		$this->ajaxReturn ( $result );
 	}
 	
-	
 	/*查看具体的章节内容*/
 	public function showChapterPage(){
 		$_SESSION ['chapter']['id'] = $_GET ['chapter_id'];
@@ -68,5 +67,14 @@ class ChapterController extends Controller {
 	public function toListPage(){
 		$_SESSION ['branch']['id'] = $_GET ['branch_id'];
 		$this->display ();
+	}
+	//查看具体章节的内容
+	public function chapterTxt() {
+		$id = $_GET['chapterid'];
+		$chapter = new ChapterModel();
+		$array = $chapter->showChapterById($id);
+		$this->assign('chapter',$array);
+		$this->display();
+		
 	}
 }

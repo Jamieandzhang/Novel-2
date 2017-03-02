@@ -24,4 +24,10 @@ class BranchModel extends Model{
 		$branch = new Model('branch');
 		return $branch->query("select u.name as author,b.* from user as u,branch as b where u.name ='".$author."'and u.id=b.author2_id");
 	}
+	//查找作品所属的novel
+	public function findNovel($id){
+		$branch = new Model();
+		$nid = $branch->query("select novel_id from branch where id=".$id);
+		return $branch->query('select name,id from branch where novel_id='.$nid[0]["novel_id"]);
+	}
 }

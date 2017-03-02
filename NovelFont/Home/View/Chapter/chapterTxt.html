@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 	<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
-	<title>阅读章节</title>
+	<title>章节列表</title>
 	<link rel="stylesheet" href="/Novel/NovelFont/Public/css/bootstrap.css">
 	<script src="/Novel/NovelFont/Public/js/jquery-3.1.1.js" type="text/javascript"></script>
 	<script src="/Novel/NovelFont/Public/js/bootstrap.js" type="text/javascript"></script>
@@ -14,21 +14,13 @@
 <div id="app">
 	<my-head></my-head>
 	<!-- 头部结束 -->
-
-	<div class="row clearfix">
-		<my-left></my-left>
-
-		<div class="col-md-8 column">
-			<div v-for="item in chapter">
-				<h3>第{{item.num}}章:{{item.name}}</h3>
-				<div v-html="item.txt"></div>
-			</div>
-		</div>
-	</div>
+	<h3>第{$chapter[0]["num"]}章:{$chapter[0]["name"]}</h3>
+	{$chapter[0]["txt"]}
 </div>
+
 <script src="/Novel/NovelFont/Public/js/vue.js"></script>
 <script src="/Novel/NovelFont/Public/js/vue-resource.js"></script>
 <script src="/Novel/NovelFont/Public/js/vueGlobal.js"></script>
-<script src="/Novel/NovelFont/Public/js/showChapterPage.js"></script>
+<script src="/Novel/NovelFont/Public/js/vueGlobalInit.js"></script>
 </body>
 </html>

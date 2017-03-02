@@ -18,17 +18,17 @@
 
 
 	<h4 v-for="user in userInfo">
-		<p>{{user.name}}</p>
+		<p>作者名称:{{user.name}}</p>
 	</h4>
 	<div v-for="product in products">
-		<h4><a href="">{{product.name}}</a></h4>
+		<h4><a v-bind:href="'__APP__/Home/Chapter/toListPage?branch_id='+product.id">{{product.name}}</a></h4>
 		<h5>{{product.intro}}</h5>
 	</div>
 </div>
 
 <script src="/Novel/NovelFont/Public/js/vue.js"></script>
 <script src="/Novel/NovelFont/Public/js/vue-resource.js"></script>
-<script src="/Novel/NovelFont/Public/js/vueGlobal1.js"></script>
+<script src="/Novel/NovelFont/Public/js/vueGlobal.js"></script>
 <script src="/Novel/NovelFont/Public/js/otherMain2.js"></script>
 </body>
 </html>

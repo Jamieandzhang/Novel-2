@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+	<title>章节列表</title>
+	<link rel="stylesheet" href="/Novel/NovelFont/Public/css/bootstrap.css">
+	<script src="/Novel/NovelFont/Public/js/jquery-3.1.1.js" type="text/javascript"></script>
+	<script src="/Novel/NovelFont/Public/js/bootstrap.js" type="text/javascript"></script>
+	<style type="text/css" media="screen">
+		body{padding: 70px;}
+	</style>
+</head>
+<body>
+<div id="app">
+	<my-head></my-head>
+	<!-- 头部结束 -->
+	<my-left></my-left>
+	<!--右侧表格栏-->
+	<form action="__APP__/Home/Branch/add" method="post">
+		<div class="col-md-8 column">
+			<div class="form-group">
+			    <label for="input">分支名称</label>
+			   	<input type="text" name="name" class="form-control" placeholder="建议命名格式:主分支-分支名  这样做可以增加阅读量">
+			</div>
+
+			<div class="form-group">
+				<label for="input">分支起始章节数</label>
+			    <input type="text" name="startChapter" class="form-control" placeholder="如从第3章开始接龙,请再此输入3">
+			</div>
+
+			<div class="form-group">
+			    <label for="input">分支类型：如玄幻、科幻、言情等</label>
+			    <input type="text" name="type" class="form-control" placeholder="小说类型">
+			</div>
+			
+			<div class="form-group">
+				<label for="input">分支简介</label>
+			    <input type="text" name="intro" class="form-control" placeholder="小说简介">
+			</div>
+
+			<div class="form-group">
+				<button type="submit" class="btn btn-default">创建分支</button>
+			</div>
+		</div>
+	</form>	
+</div>
+<script src="/Novel/NovelFont/Public/js/vue.js"></script>
+<script src="/Novel/NovelFont/Public/js/vue-resource.js"></script>
+<script src="/Novel/NovelFont/Public/js/vueGlobal.js"></script>
+<script src="/Novel/NovelFont/Public/js/vueGlobalInit.js"></script>
+</body>
+</html>

@@ -14,17 +14,23 @@
 <div id="app">
 	<my-head></my-head>
 	<!-- 头部结束 -->
-	<h4 v-for="chapter in chapterList">
+	<h3>相关作品</h3>
+    <span v-for="b in branches" >
+     <a v-bind:href="'__APP__/Home/Chapter/toListPage?branch_id='+b.id">{{b.name}}</a>
+    /</span>
+    <br><br>
+    <h4>本作品章节：</h4>
+	<h5 v-for="chapter in chapterList">
 		<li>
-			<a href="#">第{{chapter.num}}章:{{chapter.name}}</a>
+			<a v-bind:href="'__APP__/Home/Chapter/chapterTxt?chapterid='+chapter.id">第{{chapter.num}}章:{{chapter.name}}</a>
 			<p>概览:</p><p v-html="chapter.txt"></p>
 		</li>
-	</h4>
+	</h5>
 </div>
 
 <script src="/Novel/NovelFont/Public/js/vue.js"></script>
 <script src="/Novel/NovelFont/Public/js/vue-resource.js"></script>
-<script src="/Novel/NovelFont/Public/js/vueGlobal1.js"></script>
+<script src="/Novel/NovelFont/Public/js/vueGlobal.js"></script>
 <script src="/Novel/NovelFont/Public/js/chapterListPage.js"></script>
 </body>
 </html>

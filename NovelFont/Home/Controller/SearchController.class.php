@@ -23,21 +23,19 @@ class SearchController extends Controller{
 		 * 3.author的name中包含此关键字
 		 */
 		$kWord = $_SESSION['search']['kWord'];
+		$branchModel = new BranchModel();
 		//1
 		if ('novelName'==$_SESSION['search']['type']){
-			$branchModel = new BranchModel();
 			$res = $branchModel->findByName($kWord);
-			$this->ajaxReturn($res);
 		//2
 		}elseif ('novelType'==$_SESSION['search']['type']){
-			$branchModel = new BranchModel();
 			$res = $branchModel->findByType($kWord);
-			$this->ajaxReturn($res);
 		//3
 		}else{
-			$branchModel = new BranchModel();
 			$res = $branchModel->findByAuthor($kWord);
-			$this->ajaxReturn($res);
 		}
+		$this->ajaxReturn($res);
 	}
+	
+	
 }

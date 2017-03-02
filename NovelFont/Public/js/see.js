@@ -10,6 +10,7 @@ var vm = new Vue({
         this.searchNovel();
     },
     methods:{
+
         searchNovel:function (){
             var _this = this;
             this.$http.get('../Search/search').then(function(res){
