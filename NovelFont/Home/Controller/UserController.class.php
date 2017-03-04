@@ -33,14 +33,14 @@ class UserController extends Controller {
 		}else{ //若存在
 			//将用户信息保存在session中
 			$_SESSION['user'] = $result[0];
-			$this->display("Index/index_logined");
+			$this->display("Branch/branch_managePage");
 		}
 	}
 	//用户注销控制器
 	public function logout(){
 		//为了安全起见，先判断session中是否存有用户信息
 		if ($_SESSION['user']) {
-			$_SESSION['user']=null;//将已登录的session置为空
+			session_unset();//将已登录的session置为空
 			$this->display('Index/index');
 		}else{
 			$this->display('Index/index');

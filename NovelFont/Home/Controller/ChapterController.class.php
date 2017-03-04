@@ -4,6 +4,7 @@ namespace Home\Controller;
 
 use Think\Controller;
 use Home\Model\ChapterModel;
+use Home\Model\CommonService;
 
 class ChapterController extends Controller {
 	// 跳转到添加章节的页面
@@ -30,14 +31,16 @@ class ChapterController extends Controller {
 		if ('' != str_replace ( " ", "", $_POST ['chapterName'] )) {
 			$data ['name'] = $_POST ['chapterName'];
 		}
+		
 		if ('' != str_replace ( " ", "", $_POST ['txt'] )) {
-			$data ['txt'] = $_POST ['txt'];
+			$data ['txt'] = CommonService::str2file($_POST ['txt']);
 		}
 		
 		if (4 == count ( $data )) {
 			$chapter = new ChapterModel ();
 			$chapter->add ( $data );
-			echo "恭喜你保存成功！！！";
+// 			echo "恭喜你保存成功！！！";
+			$this->display('Branch/branch_managePage');
 		} else {
 			echo '有未填写的字段，请填写完整！！！';
 		}
@@ -61,8 +64,10 @@ class ChapterController extends Controller {
 	public function showChapter(){
 		$chapter = new ChapterModel();
 		$result = $chapter->showChapterById($_SESSION ['chapter']['id']);
+		$result[0]['txt']=CommonService::file2str($result[0]['txt']);
 		$this->ajaxReturn ( $result );
 	}
+	
 	//当外人查看作品章节时
 	public function toListPage(){
 		$_SESSION ['branch']['id'] = $_GET ['branch_id'];
@@ -72,8 +77,10 @@ class ChapterController extends Controller {
 	public function chapterTxt() {
 		$id = $_GET['chapterid'];
 		$chapter = new ChapterModel();
-		$array = $chapter->showChapterById($id);
-		$this->assign('chapter',$array);
+		$cha_row = $chapter->showChapterById($id)[0];
+		
+		$cha_row['txt']=CommonService::file2str($cha_row['txt']);
+		$this->assign('chapter',$cha_row);
 		$this->display();
 		
 	}

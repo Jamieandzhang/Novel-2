@@ -9,6 +9,11 @@ class ChapterModel extends Model{
 		$chapter = new Model ('chapter');
 		return $chapter->where($where)->select();
 	}
+	/**
+	 * 
+	 * @param int
+	 * @return array
+	 */
 	public function showChapterById($chapterId){
 		$where['id'] = $chapterId;
 		$chapter = new Model('chapter');

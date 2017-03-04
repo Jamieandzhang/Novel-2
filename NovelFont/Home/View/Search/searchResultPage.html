@@ -25,8 +25,17 @@
 				作者:<a v-bind:href="'__APP__/Home/UserPage/otherMain?other='+novel.author">{{novel.author}}</a></p>
 
 				<p v-if="novel.main==1">主分支否：是</p>
-				<p v-else>主分支否：否</p>
-				<p>简介：{{novel.intro}}</p>
+				<p v-else>主分支否：否
+
+				来源:此分支承接于
+				<a href="">{{novel.mainbranch}}</a>
+				第{{novel.startchapter}}章,阅读主分支
+				<a href="">{{novel.mainbranch}}</a>
+				前{{novel.startchapter-1}}可以对剧情有更好的了解。
+					
+				</p>
+				
+				<p>简介:{{novel.intro}}</p>
 			</div>
 	</li>
 </div>

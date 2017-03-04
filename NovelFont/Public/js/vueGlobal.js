@@ -48,5 +48,6 @@ Vue.component('my-left',{
       '<a href="/Novel/index.php/Home/Inspiration/ins_managePage" class="list-group-item  gap" title="Continue">灵感随笔</a>'+
       '<a href="/Novel/index.php/Home/NovelPage/" class="list-group-item  gap" title="By yourself">关注你的人</a>'+
       '<a href="/Novel/index.php/Home/NovelPage/" class="list-group-item  gap" title="By yourself">你关注的人</a>'+
+      '<a href="/Novel/index.php/Home/User/logout" class="list-group-item  gap" title="By yourself">退出登录</a>'+
       '</div>'
 })

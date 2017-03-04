@@ -83,7 +83,7 @@ class BranchController extends Controller {
 		$b = new BranchModel();
 		$b->add($data);
 		
-		echo "添加成功";
+		$this->display('Branch/branch_managePage');
 	}
 	//同一novelId的作品
 	public function sameNoveId(){
